@@ -1,0 +1,23 @@
+source 'https://rubygems.org'
+
+gem 'rails', '~> 4.1.5'
+gem 'mysql2', '~> 0.3.15'
+gem 'mdsol-tools', git: 'git@github.com:mdsol/mdsol-tools.git', tag: 'v0.3.2'
+gem 'dice_bag', '~> 0.8'
+gem 'dice_bag-mdsol', git: 'git@github.com:mdsol/dice_bag-mdsol.git', tag: 'v0.0.3'
+gem 'crichton', git: 'git@github.com:mdsol/crichton.git', ref: '840f0ae8fccf50f37c99e688a8e91e5558bb3ac5'
+gem 'rack-app_status', git: 'git@github.com:mdsol/rack-app_status.git', tag: '0.1.2', require: 'rack/app_status'
+gem 'newrelic_rpm', '~> 3.6'
+gem 'representors', git: 'git@github.com:mdsol/crichton-representors.git', ref: 'ac7985bc6a8f98bc7c8e64797fb78996146cfb3d'
+gem 'mauth-client', git: 'git@github.com:mdsol/mauth-client.git', tag: 'v2.7.1'
+# Fixing faraday-version, since mauth-client does not work with the latest 0.9.x
+# version of faraday
+gem 'faraday', '~> 0.8.9'
+gem 'api_pagination', git: 'git@github.com:mdsol/api_pagination.git', tag: 'v0.0.11'
+gem 'hyper_guy', git: 'git@github.com:mdsol/hyper_guy.git', tag: 'v0.0.4'
+gem 'builder', '~> 3.1'
+gem 'jbuilder', '~> 2.1.3'
+gem 'yajl-ruby', '~> 1.2.1', require: 'yajl'
+gem 'addressable', '~> 2.3.6'
+gem 'astinus', git: 'git@github.com:mdsol/astinus.git', tag: 'v0.1.0'
+gem 'unicorn', '~> 4.8.3'

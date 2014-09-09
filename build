@@ -3,5 +3,5 @@ tar -zxvf nginx-1.6.0.tar.gz
 cd nginx-1.6.0
 ./configure --prefix=/mnt/app/shared --with-http_ssl_module  --without-http_rewrite_module
 make
-sudo make install
+make install
 

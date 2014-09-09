@@ -1,0 +1,87 @@
+user www-data;
+worker_processes  1;
+daemon off;
+
+error_log  /var/log/nginx/error.log;
+pid        /var/run/nginx.pid;
+
+events {
+  worker_connections  1024;
+}
+
+http {
+
+  include       /etc/nginx/mime.types;
+  default_type  application/octet-stream;
+
+  access_log	/var/log/nginx/access.log;
+
+  sendfile on;
+  tcp_nopush on;
+  tcp_nodelay on;
+
+  keepalive_timeout  65;
+
+  gzip  on;
+  gzip_http_version 1.0;
+  gzip_comp_level 2;
+  gzip_proxied any;
+  gzip_vary off;
+  gzip_types text/plain text/css application/x-javascript text/xml application/xml application/rss+xml application/atom+xml text/javascript application/javascript application/json text/mathml;
+  gzip_min_length  1000;
+  gzip_disable     "MSIE [1-6]\.";
+
+  server_names_hash_bucket_size 64;
+  types_hash_max_size 2048;
+  types_hash_bucket_size 64;
+
+server {
+  listen   80;
+  server_name  ip-10-71-130-203;
+
+  access_log  /var/log/nginx/localhost.access.log;
+
+  location / {
+    root   /var/www/nginx-default;
+    index  index.html index.htm;
+  }
+
+  location ^~ /app_status {
+    # added by Chad - using nginx default page as app_status
+    # in lieu of something better
+    root /usr/share/ngnix/www;
+  }
+}
+
+server {
+        listen 443;
+	# Created by chef cookbook
+        server_name ~^wormhole-STAGEHERE-app-web.*$ ~^wormhole.*$;
+
+        ssl on;
+        # values controlled by mdsol_base cookbook
+        ssl_certificate /etc/secrets/ssl/private/crt.crt;
+        ssl_certificate_key /etc/secrets/ssl/private/key.key;
+
+        # mdsol nginx template
+        proxy_set_header X-Forwarded-Ssl on;
+        proxy_set_header X-Forwarded-Scheme  https;
+        proxy_set_header X-Forwarded-Proto https;
+
+        # added by Chad
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header Host $host;
+
+
+        location /v2 {
+                 proxy_pass https://wormhole-sandbox-2.imedidata.net;
+        }
+
+	location /v1 {
+                 # deployed eureka outside of wormhole project
+		 proxy_pass https://eureka-sandbox.imedidata.net;
+        }
+}
+}
+

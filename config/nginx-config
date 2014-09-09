@@ -36,25 +36,7 @@ http {
   types_hash_bucket_size 64;
 
 server {
-  listen   80;
-  server_name  ip-10-71-130-203;
-
-  access_log  /var/log/nginx/localhost.access.log;
-
-  location / {
-    root   /var/www/nginx-default;
-    index  index.html index.htm;
-  }
-
-  location ^~ /app_status {
-    # added by Chad - using nginx default page as app_status
-    # in lieu of something better
-    root /usr/share/ngnix/www;
-  }
-}
-
-server {
-        listen 443;
+        listen 2000;
 	# Created by chef cookbook
         server_name ~^wormhole-STAGEHERE-app-web.*$ ~^wormhole.*$;
 

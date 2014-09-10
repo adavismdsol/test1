@@ -28,7 +28,6 @@ http {
   gzip_vary off;
   gzip_types text/plain text/css application/x-javascript text/xml application/xml application/rss+xml application/atom+xml text/javascript application/javascript application/json text/mathml;
   gzip_min_length  1000;
-  gzip_disable     "MSIE [1-6]\.";
 
   server_names_hash_bucket_size 64;
   types_hash_max_size 2048;
@@ -37,12 +36,12 @@ http {
 server {
         listen 2000;
 	# Created by chef cookbook
-        server_name ~^wormhole-STAGEHERE-app-web.*$ ~^wormhole.*$;
+        server_name name.com;
 
-        ssl on;
+        #ssl on;
         # values controlled by mdsol_base cookbook
-        ssl_certificate /etc/secrets/ssl/private/crt.crt;
-        ssl_certificate_key /etc/secrets/ssl/private/key.key;
+        #ssl_certificate /etc/secrets/ssl/private/crt.crt;
+        #ssl_certificate_key /etc/secrets/ssl/private/key.key;
 
         # mdsol nginx template
         proxy_set_header X-Forwarded-Ssl on;
@@ -65,4 +64,5 @@ server {
         }
 }
 }
+
 

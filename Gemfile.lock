@@ -1,0 +1,301 @@
+GIT
+  remote: git@github.com:mdsol/api_pagination.git
+  revision: 208a0f26c6ab179a19509fce864794417a23b011
+  tag: v0.0.11
+  specs:
+    api_pagination (0.0.11)
+      kaminari
+
+GIT
+  remote: git@github.com:mdsol/astinus.git
+  revision: e66f4c644ee61663f33951d38e64e32323484b6e
+  tag: v0.1.0
+  specs:
+    astinus (0.1.0)
+      log4r (~> 1.1)
+
+GIT
+  remote: git@github.com:mdsol/crichton-representors.git
+  revision: ac7985bc6a8f98bc7c8e64797fb78996146cfb3d
+  ref: ac7985bc6a8f98bc7c8e64797fb78996146cfb3d
+  specs:
+    representors (0.0.1)
+      enumerable-lazy (~> 0.0.1)
+      rake
+
+GIT
+  remote: git@github.com:mdsol/crichton.git
+  revision: 840f0ae8fccf50f37c99e688a8e91e5558bb3ac5
+  ref: 840f0ae8fccf50f37c99e688a8e91e5558bb3ac5
+  specs:
+    crichton (0.0.1)
+      activesupport (>= 3.2.0)
+      addressable (~> 2.3.0)
+      builder (>= 3.0.0)
+      colorize (~> 0.6.0)
+      dice_bag (~> 0.8)
+      diffy (~> 3.0.1)
+      i18n (>= 0.6.5)
+      nokogiri (>= 1.6.0)
+      rake
+
+GIT
+  remote: git@github.com:mdsol/dice_bag-mdsol.git
+  revision: f3533d00905f91348312c6b6e28ce29fb6df49bd
+  tag: v0.0.3
+  specs:
+    dice_bag-mdsol (0.0.3)
+
+GIT
+  remote: git@github.com:mdsol/hyper_guy.git
+  revision: 3473139905d6d3ae7ec71ae9c66a12094bedba3a
+  tag: v0.0.4
+  specs:
+    hyper_guy (0.0.4)
+      crichton
+      mauth-client
+      representors
+
+GIT
+  remote: git@github.com:mdsol/mauth-client.git
+  revision: 6bf6bda3fb7108166543f45f57ab9c7cb8cb06fc
+  tag: v2.7.1
+  specs:
+    mauth-client (2.7.1)
+      coderay (~> 1.0)
+      dice_bag (~> 0.6)
+      faraday (~> 0.7)
+      faraday_middleware (~> 0.9)
+      json (~> 1.7)
+      rack
+      term-ansicolor (~> 1.0)
+
+GIT
+  remote: git@github.com:mdsol/mdsol-tools.git
+  revision: a579688d034a68af058ab99277c260fe060fcdd6
+  tag: v0.3.2
+  specs:
+    mdsol-tools (0.3.1)
+      activesupport (>= 2.2.1)
+      addressable
+      uuidtools (>= 2.1.2)
+
+GIT
+  remote: git@github.com:mdsol/rack-app_status.git
+  revision: 34bb7ae5cc915968f7d7aae4a0b1fa36bc333d51
+  tag: 0.1.2
+  specs:
+    rack-app_status (0.1.2)
+      activesupport
+      rack
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (4.1.5)
+      actionpack (= 4.1.5)
+      actionview (= 4.1.5)
+      mail (~> 2.5.4)
+    actionpack (4.1.5)
+      actionview (= 4.1.5)
+      activesupport (= 4.1.5)
+      rack (~> 1.5.2)
+      rack-test (~> 0.6.2)
+    actionview (4.1.5)
+      activesupport (= 4.1.5)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+    activemodel (4.1.5)
+      activesupport (= 4.1.5)
+      builder (~> 3.1)
+    activerecord (4.1.5)
+      activemodel (= 4.1.5)
+      activesupport (= 4.1.5)
+      arel (~> 5.0.0)
+    activesupport (4.1.5)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    addressable (2.3.6)
+    arel (5.0.1.20140414130214)
+    builder (3.2.2)
+    coderay (1.1.0)
+    colorize (0.6.0)
+    dice_bag (0.8.0)
+      rake
+    diffy (3.0.6)
+    enumerable-lazy (0.0.1)
+    erubis (2.7.0)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    hike (1.2.3)
+    i18n (0.6.11)
+    jbuilder (2.1.3)
+      activesupport (>= 3.0.0, < 5)
+      multi_json (~> 1.2)
+    json (1.8.1)
+    kaminari (0.16.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+    kgio (2.9.2)
+    log4r (1.1.10)
+    mail (2.5.4)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.25.1)
+    mini_portile (0.6.0)
+    minitest (5.4.1)
+    multi_json (1.10.1)
+    multipart-post (1.2.0)
+    mysql2 (0.3.16)
+    newrelic_rpm (3.9.4.245)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
+    polyglot (0.3.5)
+    rack (1.5.2)
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rails (4.1.5)
+      actionmailer (= 4.1.5)
+      actionpack (= 4.1.5)
+      actionview (= 4.1.5)
+      activemodel (= 4.1.5)
+      activerecord (= 4.1.5)
+      activesupport (= 4.1.5)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 4.1.5)
+      sprockets-rails (~> 2.0)
+    railties (4.1.5)
+      actionpack (= 4.1.5)
+      activesupport (= 4.1.5)
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+    raindrops (0.13.0)
+    rake (10.3.2)
+    sprockets (2.12.2)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-rails (2.1.4)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      sprockets (~> 2.8)
+    term-ansicolor (1.3.0)
+      tins (~> 1.0)
+    thor (0.19.1)
+    thread_safe (0.3.4)
+    tilt (1.4.1)
+    tins (1.3.2)
+    treetop (1.4.15)
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+      polyglot (>= 0.3.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    uuidtools (2.1.5)
+    yajl-ruby (1.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  addressable (~> 2.3.6)
+  api_pagination!
+  astinus!
+  builder (~> 3.1)
+  crichton!
+  dice_bag (~> 0.8)
+  dice_bag-mdsol!
+  faraday (~> 0.8.9)
+  hyper_guy!
+  jbuilder (~> 2.1.3)
+  mauth-client!
+  mdsol-tools!
+  mysql2 (~> 0.3.15)
+  newrelic_rpm (~> 3.6)
+  rack-app_status!
+  rails (~> 4.1.5)
+  representors!
+  unicorn (~> 4.8.3)
+  yajl-ruby (~> 1.2.1)
+

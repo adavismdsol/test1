@@ -46,14 +46,14 @@ server {
         proxy_set_header Host $host;
 
 
-        location /v2 {
-                 proxy_pass https://wormhole-sandbox-2.imedidata.net;
-        }
-
-	location /v1 {
-                 # deployed eureka outside of wormhole project
-		 proxy_pass https://eureka-sandbox.imedidata.net;
-        }
+        #location /v2 {
+        #         proxy_pass https://wormhole-sandbox-2.imedidata.net;
+        #}
+#
+#	location /v1 {
+ #                # deployed eureka outside of wormhole project
+#		 proxy_pass https://eureka-sandbox.imedidata.net;
+ #       }
 }
 }
 

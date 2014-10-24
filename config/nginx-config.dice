@@ -2,7 +2,7 @@ worker_processes  1;
 daemon off;
 
 error_log  /mnt/app/shared/logs/error.log;
-pid        /mnt/app/shared/pids/nginx.pid;
+pid        /mnt/app/shared/nginx.pid;
 
 events {
   worker_connections  1024;
